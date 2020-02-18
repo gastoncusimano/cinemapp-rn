@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
     textShadowOffset: {width: 1, height: 1}
   },
   buttonText:{
-    marginTop: 80,
+    marginTop: 150,
     fontSize: DEVICE_HEIGHT >= 768 ? 25 : 13,
     padding: 5,
     borderRadius: 25,

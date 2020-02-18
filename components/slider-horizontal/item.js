@@ -8,7 +8,6 @@ export default function Item(props) {
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-        console.log(props.item)
         if (props.item.item.poster_path) {
             const timer = setTimeout(() => {setIsLoading(false)}, 4500);
             return () => clearTimeout(timer)
