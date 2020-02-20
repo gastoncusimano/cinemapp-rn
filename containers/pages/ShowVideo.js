@@ -23,7 +23,7 @@ export default function ShowVideo(props) {
             : null}
             <Image
               style={styles.shadowImgRotated}
-              source={ require('../assets/shadow.png')}
+              source={ require('../../assets/shadow.png')}
               resizeMode={'repeat'}
               />
       </View>

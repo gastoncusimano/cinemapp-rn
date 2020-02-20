@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, Dimensions, TextInput, Keyboard} from 'react-native';
 import Svg, { Image, Circle, ClipPath } from 'react-native-svg';
-import { Fetch } from '../helpers/Fetch'
 
 import Animated, { Easing } from 'react-native-reanimated';
 import {Ionicons} from '@expo/vector-icons'
@@ -184,7 +183,7 @@ class Login extends Component {
               />
             </ClipPath>
             <Image 
-                href={require('../assets/bg.jpg')}
+                href={require('../../assets/bg.jpg')}
                 width={width}
                 height={this.state.height + 100}
                 preserveAspectRatio="xMidyMid slice"
@@ -193,7 +192,7 @@ class Login extends Component {
             <Image 
                 y={this.state.height /2 - 50}
                 x={30}
-                href={require('../assets/logo.png')}
+                href={require('../../assets/logo.png')}
                 width={300}
                 height={100}
                 style={{zIndex: 30, position: 'absolute'}}

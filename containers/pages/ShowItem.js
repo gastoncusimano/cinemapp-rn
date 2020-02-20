@@ -1,14 +1,14 @@
 import React, {useState, useEffect, Component} from 'react';
 import { StyleSheet, Text, View, Image, ImageBackground, Share, Button, ScrollView, Dimensions, Animated, TouchableHighlight} from 'react-native';
 import {Ionicons, EvilIcons} from '@expo/vector-icons'
-import { Fetch } from '../helpers/Fetch'
+import { Fetch } from '../../helpers/Fetch'
 import moment from "moment";
 
 //Custom Components
-import SliderHorizontal from '../components/slider-horizontal/index'
+import SliderHorizontal from '../../components/slider-horizontal/index'
 
 
-const IMG_URL = "https://image.tmdb.org/t/p/w500"
+const IMG_URL = "https://image.tmdb.org/t/p/original"
 const API_KEY = "api_key=76c7a1c86217796b701e803e006c5832"
 const API_LANG = "en-Us"
 const DEVICE_HEIGHT = Dimensions.get('window').height
@@ -129,7 +129,10 @@ export default function ShowItem(props) {
                     <EvilIcons  name="play"
                                 size={65}
                                 color="white" 
-                                onPress={() => props.navigation.push('ShowVideo', {video: state.videos[0].key})} 
+                                onPress={() => props.navigation.push('HomeStack', {
+                                  screen: 'ShowVideo',
+                                  params: { video: state.videos[0].key},
+                                })} 
                                 style={{position: 'absolute',
                                         top: '45%', 
                                         left: '40%', 
@@ -139,8 +142,8 @@ export default function ShowItem(props) {
                                         textShadowRadius: 10,
                                         textShadowOffset: {width: 3, height: 1}}}/>
                     : null }
-                    <TouchableHighlight style={{position: 'absolute', top: 45, left: 25, zIndex: 10}}>
-                      <Ionicons name="ios-arrow-back" size={35} color="white" onPress={() => props.navigation.goBack()}/>
+                    <TouchableHighlight style={{position: 'absolute', top: 42, left: 15, zIndex: 10, height: 30, width: 30}}>
+                      <Ionicons name="ios-arrow-back" size={30} color="white" onPress={() => props.navigation.goBack()}/>
                     </TouchableHighlight>
                     <ImageBackground
                         style={{width: '100%', height: '100%'}}
@@ -150,12 +153,12 @@ export default function ShowItem(props) {
                     />
                     <Image
                       style={styles.shadowImgRotated}
-                      source={ require('../assets/shadow.png')}
+                      source={ require('../../assets/shadow.png')}
                       resizeMode={'repeat'}
                       />
                     <Image
                       style={styles.shadowImg}
-                      source={ require('../assets/shadow.png')}
+                      source={ require('../../assets/shadow.png')}
                       resizeMode={'repeat'}
                       />
                 </>

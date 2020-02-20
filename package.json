@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "@react-native-community/masked-view": "0.1.5",
+    "@react-navigation/bottom-tabs": "^5.0.6",
+    "@react-navigation/drawer": "^5.0.6",
     "@react-navigation/native": "^5.0.3",
     "@react-navigation/stack": "^5.0.3",
     "expo": "~36.0.0",
@@ -17,13 +19,21 @@
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
+    "react-native-axios": "^0.17.1",
     "react-native-device-info": "^5.5.2",
     "react-native-gesture-handler": "~1.5.0",
+    "react-native-paper": "^3.6.0",
     "react-native-reanimated": "^1.4.0",
     "react-native-safe-area-context": "0.6.0",
     "react-native-screens": "2.0.0-alpha.12",
     "react-native-skeleton-content": "^1.0.13",
+<<<<<<< Updated upstream
     "react-native-svg": "9.13.3",
+=======
+    "react-native-stars": "^1.1.6",
+    "react-native-svg": "9.13.3",
+    "react-native-swiper": "^1.5.14",
+>>>>>>> Stashed changes
     "react-native-vector-icons": "^6.6.0",
     "react-native-web": "~0.11.7",
     "react-native-webview": "^8.1.0"
