@@ -97,7 +97,7 @@ export default function LatestMovie(props) {
             layout={[
             { width: DEVICE_HEIGHT >= 768 ? 550 : 195, height: DEVICE_HEIGHT >= 768 ? 100 : 55, position: 'absolute', bottom: 45 , left: 10, right: 0},
             { width: DEVICE_HEIGHT >= 768 ? 550 : 155, height: DEVICE_HEIGHT >= 768 ? 100 : 25, position: 'absolute', bottom: 5 , left: 10, right: 0},
-            { width: DEVICE_HEIGHT >= 768 ? 350 : 65, height: DEVICE_HEIGHT >= 768 ? 60 : 65, position: 'absolute', top: '42%', left: '41%', right: 0},
+            { width: DEVICE_HEIGHT >= 768 ? 350 : 65, height: DEVICE_HEIGHT >= 768 ? 60 : 65, position: 'absolute', top: '43%', left: '41%', right: 0},
             { width: DEVICE_HEIGHT >= 768 ? 350 : 85, height: DEVICE_HEIGHT >= 768 ? 60 : 75, position: 'absolute', bottom: 5, right: 10},
             ]}
             >
